@@ -1,0 +1,5 @@
+names=("ali","ijaz","m")
+list_names=list(names)
+list_names.append("new")
+list_names=tuple(list_names)
+print(list_names)
