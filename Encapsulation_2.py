@@ -6,7 +6,7 @@ class Computer():
     def get_info(self):
      return self.__brand + self.__model
  
-computer=Computer("hP  ","2012")
+computer=Computer("hP   ","2012")
 print(computer.get_info())
 
   
