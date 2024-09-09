@@ -20,7 +20,7 @@ while True:
 
     # Randomly select computer's choice
     computer_choice = random.choice(choices)
-    print(f"Computer chose {computer_choice}. You chose {user_input}.")
+    print(f"Computer chose {computer_choice}.  chose {user_input}.")
 
     # Logic to determine the winner
     if user_input == computer_choice:
