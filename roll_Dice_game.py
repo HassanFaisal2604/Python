@@ -37,11 +37,10 @@ def player_game():
             
             else:
                 print('Invalid input. Please type "roll", "hold", or "no".')
-        
-        return False  # Indicates game should continue
+         # Indicates game should continue
     
     while True:
-        for player in players:
+        for player in players: #  Here player is an elemnt declared to run the loop for items in the list of players
             if play_turn(player):
                 break  # Exit the game if "no" was entered
 
