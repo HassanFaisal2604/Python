@@ -3,6 +3,11 @@ import random
 u_count = 0  # User score
 c_count = 0  # Computer score
 choices = ['rock', 'paper', 'scissors']  # Possible choices
+win_conditions = {
+    'rock': 'scissors',
+    'paper': 'rock',
+    'scissors': 'paper'
+}
 
 while True:
     # Get user's input
@@ -20,14 +25,12 @@ while True:
 
     # Randomly select computer's choice
     computer_choice = random.choice(choices)
-    print(f"Computer chose {computer_choice}.  chose {user_input}.")
+    print(f"Computer chose {computer_choice}. You chose {user_input}.")
 
     # Logic to determine the winner
     if user_input == computer_choice:
         print("It's a tie!")
-    elif (user_input == 'rock' and computer_choice == 'scissors') or \
-         (user_input == 'scissors' and computer_choice == 'paper') or \
-         (user_input == 'paper' and computer_choice == 'rock'):
+    elif win_conditions[user_input] == computer_choice:
         print("You win!")
         u_count += 1
     else:
